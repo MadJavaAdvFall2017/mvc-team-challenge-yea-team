@@ -58,20 +58,20 @@ public class MVCTeam extends HttpServlet {
             employeeSalary.add("90000");
             employeeSalary.add("80000");  
             
-            MVCTeam myTeam = new MVCTeam();
+            MVCBean myBean = new MVCBean();
             
             for (String list : employeeName) {
               
                 //out.print(list);
-                myTeam.setName(list);
+                myBean.setName(list);
             }
             
             for (String list : employeeId) {
-                //myTeam.setId(list);
+                myBean.setId(list);
             }
             
             for (String list : employeeSalary) {
-                //myTeam.setSalary(list);
+                myBean.setSalary(list);
             }
             
             request.setAttribute("coolBeanOne", employeeName);
