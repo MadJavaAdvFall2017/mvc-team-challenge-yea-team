@@ -32,9 +32,9 @@ public class MVCTeam extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
-            response.setContentType("html");
+           // response.setContentType("html");
 
-            PrintWriter out = response.getWriter();
+           // PrintWriter out = response.getWriter();
             
 
             List<String> employeeName = new ArrayList<String>();
@@ -64,21 +64,24 @@ public class MVCTeam extends HttpServlet {
               
                 //out.print(list);
                 myBean.setName(list);
+                request.setAttribute("coolBeanOne", myBean);
             }
             
             for (String list : employeeId) {
+                
                 myBean.setId(list);
+                request.setAttribute("coolBeanTwo", myBean);
             }
             
             for (String list : employeeSalary) {
+                
                 myBean.setSalary(list);
+                request.setAttribute("coolBeanThree", myBean);
             }
             
-            request.setAttribute("coolBeanOne", employeeName);
-            request.setAttribute("coolBeanTwo", employeeId);
-            request.setAttribute("coolBeanThree", employeeSalary);
+
             
-            String url = "/java112.jsp";
+            String url = "/yeaTeam.jsp";
             
             RequestDispatcher  dispatcher =
                     getServletContext().getRequestDispatcher(url);
