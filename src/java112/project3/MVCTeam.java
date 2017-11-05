@@ -68,29 +68,6 @@ public class MVCTeam extends HttpServlet {
             request.setAttribute("yeahTeamBean", ourBean);
             
             
-           /* for (String list : employeeName) {
-              
-                //out.print(list);
-                myBean.setName(employeeNameList);
-               
-            }*/
-               
-
-            /*
-            for (String list : employeeId) {
-                
-                myBean.setId(list);
-                request.setAttribute("coolBeanTwo", employeeId);
-            }*/
-            /*
-            for (String list : employeeSalary) {
-                
-                myBean.setSalary(list);
-                request.setAttribute("coolBeanThree", myBean);
-            }*/
-            
-
-            
             String url = "/yeahTeam.jsp";
             
             RequestDispatcher  dispatcher =
