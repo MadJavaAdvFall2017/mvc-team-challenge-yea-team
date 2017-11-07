@@ -39,6 +39,7 @@
       </tr>           
 
     </table>
+<<<<<<< HEAD
    
 
     <br />
@@ -46,4 +47,12 @@
     <a href="/java112/yeaTeamHome.jsp">Take me home</a>
     
     </body>
+=======
+  
+    <br />
+    
+    <a href="/java112/mvcPic.jsp">Home</a>
+
+  </body>
+>>>>>>> e61babb7f1cb569d66f7a302f741410a4f2a75ee
 </html>
