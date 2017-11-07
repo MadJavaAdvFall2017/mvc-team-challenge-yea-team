@@ -32,53 +32,43 @@ public class MVCTeam extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
-            response.setContentType("html");
+           // response.setContentType("html");
 
-            PrintWriter out = response.getWriter();
+           // PrintWriter out = response.getWriter();
             
 
-            List<String> employeeName = new ArrayList<String>();
-            List<String> employeeId = new ArrayList<String>();
-            List<String> employeeSalary = new ArrayList<String>();
+            List<String> employeeNameList = new ArrayList<String>();
+            List<Integer> employeeIdList = new ArrayList<Integer>();
+            List<Integer> employeeSalaryList = new ArrayList<Integer>();
             
-            // employeeName =  new Employee();
-           // Employee employeeId = new Employee();
+            //Employee employeeName =  new Employee();
+            //Employee employeeId = new Employee();
             //Employee employeeSalary = new Employee();
             
             // Adding 3 elements to the employee tree set
-            employeeName.add("Tina");
-            employeeName.add("Jim");
-            employeeName.add("Mark");
+            employeeNameList.add("Amy");
+            employeeNameList.add("Renee");
+            employeeNameList.add("Qiao");
             
-            employeeId.add("1");
-            employeeId.add("2");
-            employeeId.add("3");
+            employeeIdList.add(1);
+            employeeIdList.add(2);
+            employeeIdList.add(3);
               
-            employeeSalary.add("100000");
-            employeeSalary.add("90000");
-            employeeSalary.add("80000");  
+            employeeSalaryList.add(1300000);
+            employeeSalaryList.add(1200000);
+            employeeSalaryList.add(990000);  
             
-            MVCBean myBean = new MVCBean();
             
-            for (String list : employeeName) {
-              
-                //out.print(list);
-                myBean.setName(list);
-            }
+            MVCBean ourBean = new MVCBean();
             
-            for (String list : employeeId) {
-                myBean.setId(list);
-            }
+            ourBean.setNameList(employeeNameList);
+            ourBean.setIdList(employeeIdList);
+            ourBean.setSalary(employeeSalaryList);
             
-            for (String list : employeeSalary) {
-                myBean.setSalary(list);
-            }
+            request.setAttribute("yeahTeamBean", ourBean);
             
-            request.setAttribute("coolBeanOne", employeeName);
-            request.setAttribute("coolBeanTwo", employeeId);
-            request.setAttribute("coolBeanThree", employeeSalary);
             
-            String url = "/java112.jsp";
+            String url = "/yeahTeam.jsp";
             
             RequestDispatcher  dispatcher =
                     getServletContext().getRequestDispatcher(url);

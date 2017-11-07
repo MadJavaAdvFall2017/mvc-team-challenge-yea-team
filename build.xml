@@ -5,8 +5,8 @@
 
 <project default="deploy">
 
-  <property name="user_home" value="/home/student" />
-  <property name="project_home" value="${user_home}/GitHubRepos/teamMVC" />
+  <property name="user_home" value="${user.home}" />
+  <property name="project_home" value="${user.dir}" />
   <property name="tomcat" value="${user_home}/tomcat" />
   <property name="src" value="src"/>
   <property name="config" value="config"/>
@@ -303,8 +303,8 @@
         <pathelement location="${analyzer_lib}"/>
         <pathelement location="${analyzer_tests}" />
         <pathelement location="${junit}" />
-	<pathelement location="${hamcrest}" />
-	<pathelement location="${java_hamcrest}" />
+    <pathelement location="${hamcrest}" />
+    <pathelement location="${java_hamcrest}" />
       </classpath>
       <formatter type="plain"/>
       <test name="java112.tests.AnalyzerDriverTest"/>
