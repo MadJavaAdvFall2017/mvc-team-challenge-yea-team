@@ -44,14 +44,14 @@
 
     <br />
 
-    <a href="/java112/yeaTeamHome.jsp">Take me home</a>
+    <a href="/java112/yeaTeamHome.jsp">We are so Freaking Tired!</a>
     
     </body>
 
   
-    <br />
+    <br /><br /><br />
     
-    <a href="/java112/mvcPic.jsp">Home</a>
+    <a href="/java112/mvcPic.jsp">Diagram!</a>
 
   </body>
 
