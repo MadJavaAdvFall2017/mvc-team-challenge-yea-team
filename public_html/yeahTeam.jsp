@@ -39,9 +39,10 @@
       </tr>           
 
     </table>
-   
-
+  
     <br />
+    
+    <a href="/java112/mvcPic.jsp">Home</a>
 
   </body>
 </html>
