@@ -79,4 +79,8 @@ public class MVCBean {
 
 
     
+    public String toString() {
+        return "{" + nameList + idList + salaryList + "}";
+    }
+    
 }
