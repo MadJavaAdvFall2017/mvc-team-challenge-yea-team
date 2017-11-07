@@ -78,12 +78,11 @@ public class MVCBean {
     }
 
 
-<<<<<<< HEAD
-=======
+
     
     public String toString() {
         return "{" + nameList + idList + salaryList + "}";
     }
->>>>>>> e61babb7f1cb569d66f7a302f741410a4f2a75ee
+
     
 }
